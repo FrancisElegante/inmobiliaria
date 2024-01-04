@@ -1,0 +1,36 @@
+
+
+<div class="container" *ngFor="let producto of productos$ | async">
+    <div class="box">
+        <div class="top">
+            <img [src]="producto.image" alt="" />
+        </div>
+        <div class="bottom">
+            <h3>{{producto.nombre}}</h3>
+            <p>
+                {{producto.descripcion}}
+            </p>
+            <div class="advants">
+                <div>
+                    <span>Habitaciones</span>
+                    <div><i class="fas fa-th-large"></i><span>3</span></div>
+                </div>
+                <div>
+                    <span>Baños</span>
+                    <div><i class="fas fa-shower"></i><span>3</span></div>
+                </div>
+                <div>
+                    <span>Area</span>
+                    <div>
+                        <i class="fas fa-vector-square"></i><span>4300<span>M2</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="price">
+                <span>En venta:</span>
+                <span>$540,000</span>
+            </div>
+        </div>
+    </div>
+</div>
+
